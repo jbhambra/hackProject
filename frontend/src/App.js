@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import dogpic from './resources/doggo.jpeg'
+import dogpic from './doggo.jpeg'
 import './App.css';
 import ChatBot from 'react-simple-chatbot';
 import styled from 'styled-components';
