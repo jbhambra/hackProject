@@ -23,7 +23,7 @@ const Wrapper = styled.section`
 `;
 
 const steps = [
-    {
+  {
       id: '1',
       message: 'What is your name?',
       trigger: '2',
@@ -35,10 +35,32 @@ const steps = [
     },
     {
       id: '3',
-      message: 'Hi {previousValue}, nice to meet you!',
-      end: true,
+      message: 'Hi {previousValue}, nice to meet you! How are you feeling now?',
+      trigger: '4',
     },
-  ];
+    {
+        id: '4',
+        options: [
+          { value: 1, label: 'Amazing! =)', trigger: '5' },
+          { value: 2, label: 'Sad =(', trigger: '6' },
+          { value: 3, label: 'I dont know', trigger: '7' },
+        ],
+      },
+      {
+        id: '5',
+        message: 'You need to listen this music: XXX',
+        end: true,
+      },
+      {
+        id: '6',
+         message: 'You need to listen this music: YYY',
+        end: true,
+      },{
+        id: '7',
+         message: 'This is the music for you: zzz',
+        end: true,
+      }
+];
 
 class Hackers extends Component {
   render() {
