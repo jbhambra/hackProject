@@ -42,16 +42,16 @@ const steps = [
       },
       {
         id: '6',
-         message: 'You need to listen this music: YYY',
+        component: musicMessageSecond(),
         trigger: '9',
       },{
         id: '7',
-         message: 'This is the music for you: https://www.youtube.com/watch?v=uFAWIKVThjA',
+         component: musicMessageThird(),
         trigger: '9',
       },
       {
         id: '8',
-         message: 'bla: https://www.youtube.com/watch?v=uFAWIKVThjA',
+         component: musicMessageFour(),
         trigger: '9',
       }, 
  {
