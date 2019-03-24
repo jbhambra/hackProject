@@ -38,35 +38,47 @@ const steps = [
       {
         id: '5',
         component: musicMessageFirst(),
-        end: true,
+        trigger: '9',
       },
       {
         id: '6',
          message: 'You need to listen this music: YYY',
-        end: true,
+        trigger: '9',
       },{
         id: '7',
          message: 'This is the music for you: https://www.youtube.com/watch?v=uFAWIKVThjA',
-        end: true,
+        trigger: '9',
       },
       {
         id: '8',
          message: 'bla: https://www.youtube.com/watch?v=uFAWIKVThjA',
-        end: true,
-      }
+        trigger: '9',
+      }, 
+ {
+      id: '9',
+      message: 'Do you want more?',
+      trigger: '10',
+    },
+    {
+        id: '10',
+        options: [
+          { value: 1, label: 'SURE!', trigger: '8' },
+          { value: 2, label: 'Nops', end: true },
+        ],
+      },
 ];
 
 function musicMessageFirst() {
-  return (<span><a href="https://youtu.be/VBmMU_iwe6U">Who run the world?</a></span>);
+  return (<span><a href="https://youtu.be/VBmMU_iwe6U" target="_blank">Who run the world?</a></span>);
 }
 function musicMessageSecond() {
-  return (<span><a href="https://youtu.be/2EwViQxSJJQ">Guess who is irreplaceble?</a></span>);
+  return (<span><a href="https://youtu.be/2EwViQxSJJQ" target="_blank">Guess who is irreplaceble?</a></span>);
 }
 function musicMessageThird() {
-  return (<span><a href="https://www.google.com">You may like this!</a></span>);
+  return (<span><a href="https://www.google.com" target="_blank">You may like this!</a></span>);
 }
 function musicMessageFour() {
-  return (<span><a href="https://www.google.com">You may like this!</a></span>);
+  return (<span><a href="https://www.google.com" target="_blank">You may like this!</a></span>);
 }
 
 class App extends Component {
