@@ -48,7 +48,7 @@ const steps = [
       },
       {
         id: '5',
-        message: 'You need to listen this music: XXX',
+        component: musicMessage(),
         end: true,
       },
       {
@@ -57,49 +57,33 @@ const steps = [
         end: true,
       },{
         id: '7',
-         message: 'This is the music for you: zzz',
+         message: 'This is the music for you: https://www.youtube.com/watch?v=uFAWIKVThjA',
         end: true,
       }
 ];
 
-class Hackers extends Component {
-  render() {
-    return (
-      <div>
-      <p>{this.props.hackers}</p>
-      <button onClick={this.props.clickHandler}>+1</button>
-      </div>
-      );
-  }
+function musicMessage () {
+  return (<span><a href="https://www.google.com">You may like this!</a></span>);
 }
+
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      hackers: 999,
+      horseMusic: "https://youtu.be/ZQOYOuSWywA",
     }
   }
-
-buttonClick = (event) => {
-  this.setState({
-    hackers: this.state.hackers + 1,
-  });
-}
 
 
   render() {
     return (
     <div>
-    <Hackers
-    hackers = {this.state.hackers}
-    clickHandler = {this.buttonClick}
-    />
     <styled theme={theme}>
     <div>
     <Wrapper>
-    <div>
-      <ChatBot steps={steps} />
+      <div >
+        <ChatBot steps={steps} />
       </div>
       </Wrapper>
       </div>
