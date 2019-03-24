@@ -65,7 +65,7 @@ class App extends Component {
       </Wrapper>
     </div>
     );
-
 }
 
+}
 export default App;
