@@ -1,16 +1,16 @@
 # hackProject
 Tech together hackathon project created by Prachi Patel, Augusta Raposo and Jasmine Bhambra
 
-## Inspiration:
+## Inspiration
 Studies says that women are more likely than men to experience symptoms of stress and, women who are stressed are more likely to experience depression and anxiety. Music can help reduce the stress. HappyTogether makes women feel happy by playing their favorite and popular music.
 
-## How does it work?
+## How does it work
 HappyTogether is a Chatbot that helps you feel happy and relaxed after a hard day. It measures heart rate and asks “how are you feeling today?”. Based on your answer, it will recommend music using Machine Learning Algorithm to cheer up your mood. It will measure the heart rate again and if it’s not within normal range,  then recommend some more music.
 
-## How we built it?
+## How we built it
 We build it using React as front end  and Python/Flask for backend server.
 
-## Accomplishments that we are proud of:
+## Accomplishments that we are proud of
 We’re proud of building clean and working user interface using React and Flask framework. We all had a big learning curve regarding React and Python. Neither knew much of anything about these technologies beforehand. 
 
 ## Challenges we ran into
