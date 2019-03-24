@@ -28,14 +28,16 @@ const steps = [
     {
         id: '4',
         options: [
-          { value: 1, label: 'Amazing! =)', trigger: '5' },
-          { value: 2, label: 'Sad =(', trigger: '6' },
-          { value: 3, label: 'I dont know', trigger: '7' },
+          { value: 1, label: '=)', trigger: '5' },
+          { value: 2, label: '=(', trigger: '6' },
+          { value: 3, label: '(ツ)_/¯', trigger: '7'},
+          { value: 4, label: 'bla', trigger: '8' },
+
         ],
       },
       {
         id: '5',
-        component: musicMessage(),
+        component: musicMessageFirst(),
         end: true,
       },
       {
@@ -46,12 +48,25 @@ const steps = [
         id: '7',
          message: 'This is the music for you: https://www.youtube.com/watch?v=uFAWIKVThjA',
         end: true,
+      },
+      {
+        id: '8',
+         message: 'bla: https://www.youtube.com/watch?v=uFAWIKVThjA',
+        end: true,
       }
 ];
 
-function musicMessage () {
+function musicMessageFirst() {
+  return (<span><a href="https://youtu.be/VBmMU_iwe6U">Who run the world?</a></span>);
+}
+function musicMessageSecond() {
+  return (<span><a href="https://youtu.be/2EwViQxSJJQ">Guess who is irreplaceble?</a></span>);
+}
+function musicMessageThird() {
   return (<span><a href="https://www.google.com">You may like this!</a></span>);
-
+}
+function musicMessageFour() {
+  return (<span><a href="https://www.google.com">You may like this!</a></span>);
 }
 
 class App extends Component {
