@@ -12,7 +12,7 @@ const Wrapper = styled.section`
 const steps = [
   {
       id: '1',
-      message: 'What is your name?',
+      message: 'My name is Jazz! What is your name?',
       trigger: '2',
     },
     {
