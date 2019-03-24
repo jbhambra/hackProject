@@ -1,5 +1,5 @@
 # hackProject
-Tech together hackathon project
+Tech together hackathon project created by Prachi Patel, Augusta Raposo and Jasmine Bhambra
 
 ##Inspiration:
 Studies says that women are more likely than men to experience symptoms of stress and, women who are stressed are more likely to experience depression and anxiety. Music can help reduce the stress. HappyTogether makes women feel happy by playing their favorite and popular music.
