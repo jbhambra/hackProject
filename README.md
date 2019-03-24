@@ -35,3 +35,8 @@ Built With
 react
 python
 javascript
+
+## How to run the code
+cd to frontend, type 'npm start'
+
+for python server, first run 'npm run-script build' in fontend, then cd to server and run 'python server.py'
