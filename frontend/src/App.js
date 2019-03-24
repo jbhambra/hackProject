@@ -84,9 +84,14 @@ const steps = [
         id: '10',
         options: [
           { value: 1, label: 'SURE!', trigger: '6' },
-          { value: 2, label: 'Nops', end: true },
+          { value: 2, label: 'Nops',  trigger: '14'},
         ],
       },
+  {
+      id: '14',
+      message: 'Congrats! Your heartbeat is normal now. Lets be happy Together!!!',
+      end: true ,
+    },
 ];
 
 function musicMessageFirst() {
